@@ -5,15 +5,18 @@ const TemplateDesign = () => {
 <nav className="navbar navbar-default navbar-fixed-top">
   <div className="container">
     <div className="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        {/* <span className="icon-bar"></span>
         <span className="icon-bar"></span>
-        <span className="icon-bar"></span>
-        <span className="icon-bar"></span>                        
+        <span className="icon-bar"></span>                         */}
+        Toggle
       </button>
-      <a className="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#">
+      <img src="/company_logo.png" alt="company logo" width="50" height="50"/>
+    </a>
     </div>
-    <div className="collapse navbar-collapse" id="myNavbar">
-      <ul className="nav navbar-nav navbar-right">
+    <div className="navlist" id="myNavbar">
+      <ul className="gap-3">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -29,9 +32,9 @@ const TemplateDesign = () => {
   <p>...Empowering Digital Entrepreneurship</p> 
   <form>
     <div className="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required />
+      <input type="email" className="form-control" size="50" placeholder="Email Address" required />
       <div className="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
+        <button type="button" className="btn btn-danger">Subscribe</button>
       </div>
     </div>
   </form>
@@ -100,7 +103,33 @@ Discover how to unlock the potential of your smartphone, your financial resource
   </div>
 </div>
 
-
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br/>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Sproutgigs" width="400" height="300"/>
+        <p><strong>Sproutgigs Freelancer Guide</strong></p>
+        <p>Yes, we built an enriched tutorial on how to earn swiftly with just your mobile phone as a Freelancer on Sproutgigs platform.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York" width="400" height="300"/>
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300"/>
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 )
 }

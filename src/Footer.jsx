@@ -3,7 +3,7 @@ const Footer = () => {
       <footer>
         <hr className="mt-5 mb-4" />
         <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
+    <span className="glyphicon glyphicon-chevron-up"></span>
   </a>
         <p className="text-muted">
           Created and open sourced by DEVEE 2023.

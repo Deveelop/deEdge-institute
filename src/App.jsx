@@ -1,10 +1,7 @@
-
-import Footer from "./Footer"
+import Footer from "./Components/Footer"
 import TemplateDesign from "./TemplateDesign"
 
 function App() {
-  
-
   return (
     <>
  <TemplateDesign/>
